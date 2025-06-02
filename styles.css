@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+body{
+    background-color:#121212;
+}
+
+.flex-column{
+    display:flex;
+    flex-direction: column;
+}
+
+.flex-row{
+    display:flex;
+    flex-direction:row;
+}
+
+.main-container-wrapper{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100vw;
+    min-height:100vh;
+    color:#EAEFEF;
+}
+
+.container-color{
+    background-color:#444444;
+    box-shadow: 
+        0 10px 15px -3px rgba(0, 0, 0, 0.3),
+        0 4px 6px -2px rgba(0, 0, 0, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.main-container{
+    width:75%;
+    min-height:70%;
+    font-family: "Inter", sans-serif;
+    gap:1rem;
+}
+
+.details-container{
+    align-items: center;
+    justify-content: center;
+    flex:0.3;
+    gap:0.5rem;
+    border-radius:15px;
+    height:100%;
+    padding:2rem;
+    max-width:350px;
+}
+
+.details{
+    width:70%;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-picture{
+    width:4rem;
+    height:4rem;
+    border-radius:50%;
+}
+
+.details-section{
+    gap:1rem;
+    align-items:start;
+    justify-content: start;
+    width: 100%;
+    text-align: center;
+}
+
+.details-section-icon{
+    background-color:#E0E0E0;
+    width:1.5rem;
+    height:1.5rem;
+    border-radius:50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.details-section-icon i{
+    color:#9B59B6;
+}
+
+.social-github {
+    color: #171515;
+}
+
+.social-linkedin {
+    color: #0A66C2;
+}
+
+.social-logo{
+    display:flex;
+    gap:1rem;
+    background-color:#E0E0E0;
+    margin-top:0.5rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius:10px;
+}
+
+.social-logo i{
+    font-size:1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.social-logo i:hover{
+    transform: translateY(-2px);
+}
+
+.about-me{
+    flex:0.7;
+    padding:2rem;
+    border-radius:15px;
+    overflow-y:auto;
+    max-height:100%;
+}
+
+.about-section{
+    margin-bottom:1rem;
+}
+
+.skills-section, .exploring-section {
+    margin-bottom:2rem;
+}
+
+.about-me-header{
+    font-size:2rem;
+    color:#9B59B6;
+    border-bottom:2px solid #9B59B6;
+    padding-bottom:0.5rem;
+    margin-bottom:1rem;
+}
+
+.section-header {
+    font-size: 1.5rem;
+    color: #66d9f2;
+    border-bottom: 1px solid #66d9f2;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.about-me-content{
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    color: #EAEFEF;
+}
