@@ -10,6 +10,31 @@ body{
     background-color:#121212;
 }
 
+.main-header{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:2rem;
+    margin-top:2rem;
+    font-family: "Inter", sans-serif;
+}
+
+.navbar{
+    
+}
+
+.nav-menu{
+    gap:2rem;
+    font-size:1.2rem;
+    list-style: none;
+}
+
+.nav-menu li a{
+    color:white;
+    text-decoration: none;
+    border-bottom: 2px solid white;
+}
+
 .flex-column{
     display:flex;
     flex-direction: column;
@@ -25,7 +50,7 @@ body{
     justify-content: center;
     align-items: center;
     width:100vw;
-    min-height:100vh;
+    min-height:100%;
     color:#EAEFEF;
 }
 
@@ -42,6 +67,14 @@ body{
     min-height:70%;
     font-family: "Inter", sans-serif;
     gap:1rem;
+}
+
+@media (max-width:950px){
+    .main-container{
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 .details-container{
@@ -127,8 +160,8 @@ body{
     margin-bottom:1rem;
 }
 
-.skills-section, .exploring-section {
-    margin-bottom:2rem;
+.skills-section, .exploring-section, .education-section {
+    margin-bottom:1rem;
 }
 
 .about-me-header{
@@ -151,4 +184,46 @@ body{
     line-height: 1.6;
     margin-bottom: 1rem;
     color: #EAEFEF;
+}
+
+.education-subheader{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.education-item {
+    background-color: rgba(155, 89, 182, 0.1);
+    border-left: 4px solid #9B59B6;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+    display:flex;
+    flex-direction: column;
+    gap:0.2rem;
+}
+
+.education-institution{
+    font-style:italic;
+}
+
+
+.github-stats-content{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    gap:2rem;
+    flex-wrap:wrap;
+}
+
+.github-stats-content img{
+    flex:1;
+    max-width: 100%;
+    height:auto;
+    width:auto;
+}
+
+.github-stats-content .github-language-stats{
+    max-height:190px;
 }
