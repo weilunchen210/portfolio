@@ -8,6 +8,7 @@
 
 body{
     background-color:#121212;
+    overflow-x:hidden;
 }
 
 @keyframes fadeInLeft{
@@ -72,10 +73,11 @@ body{
     display:flex;
     justify-content: center;
     align-items: center;
-    width:100vw;
+    width:100%;
     min-height:100%;
     color:#EAEFEF;
     
+    margin:1rem;
 }
 
 .container-color{
@@ -105,7 +107,7 @@ body{
 }
 
 @media (max-width:950px){
-    .main-container{
+    .about-container{
         flex-direction:column;
         align-items: center;
         justify-content: center;
@@ -127,6 +129,18 @@ body{
     width:70%;
     justify-content: center;
     align-items: center;
+}
+
+.resume{
+    border:none;
+    padding:0.7rem 2rem 0.7rem 2rem;
+    margin-top:1rem;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.resume:hover{
+    background-color:darkgrey;
 }
 
 .profile-picture{
@@ -199,15 +213,15 @@ body{
     margin-bottom:1rem;
 }
 
-.about-me-header{
+.section-header{
     font-size:2rem;
-    color:#9B59B6;
-    border-bottom:2px solid #9B59B6;
+    color:#66d9f2;
+    border-bottom:2px solid #66d9f2;
     padding-bottom:0.5rem;
     margin-bottom:1rem;
 }
 
-.section-header {
+.section-subheader {
     font-size: 1.5rem;
     color: #66d9f2;
     border-bottom: 1px solid #66d9f2;
@@ -226,6 +240,7 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    color:#66d9f2;
 }
 
 .education-item {
@@ -241,6 +256,11 @@ body{
 
 .education-institution{
     font-style:italic;
+    font-size:0.8rem;
+}
+
+.education-gpa{
+    padding-top:0.5rem;
 }
 
 
@@ -263,3 +283,152 @@ body{
     max-height:190px;
 }
 
+.exploring-items {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.exploring-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, rgba(155, 89, 182, 0.1), rgba(102, 217, 242, 0.05));
+    border-radius: 12px;
+    border-left: 4px solid #9B59B6;
+}
+
+.exploring-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #9B59B6, #66d9f2);
+    border-radius: 12px;
+    color: white;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+    box-shadow: 0 4px 15px rgba(155, 89, 182, 0.3);
+}
+
+.exploring-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.exploring-content h4 {
+    color: #66d9f2;
+    font-size: 1.1rem;
+    margin: 0 0 0.5rem 0;
+    font-weight: 600;
+}
+
+.exploring-content p {
+    color: #EAEFEF;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin: 0 0 1rem 0;
+    opacity: 0.9;
+}
+
+
+.progress-bar {
+    height: 100%;
+    background: linear-gradient(90deg, #9B59B6, #66d9f2);
+    border-radius: 3px;
+    transition: width 0.8s ease;
+    position: relative;
+}
+
+.progress-text {
+    color: #9B59B6;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .exploring-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+    
+    .exploring-icon {
+        align-self: center;
+    }
+}
+
+
+.experience-container{
+    width:50%;
+    min-height:70%;
+    font-family: "Inter", sans-serif;
+    gap:1rem;
+}
+
+.experience-container .work-experience, .experience-container .extra-curricular{
+    border-radius:10px;
+    padding:2rem;
+}
+
+.experience-item{
+    background-color: rgba(155, 89, 182, 0.1);
+    border-left: 4px solid #9B59B6;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+    display:flex;
+    flex-direction: column;
+    gap:0.2rem;
+}
+
+.experience-subheader{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+
+.experience-description{
+    padding-top:0.5rem;
+    padding-left:1rem;
+}
+
+.experience-item .location{
+    font-style:italic;
+    font-size:0.8rem;
+}
+
+.section-header-with-icon .section-header, .section-subheader-with-icon .section-subheader{
+    border-bottom:0;
+    margin-bottom:0;
+    padding-bottom:0;
+    text-align: center;
+}
+
+.section-header-with-icon, .section-subheader-with-icon{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    gap:1rem;
+    margin-bottom:0.5rem;
+    padding-bottom:0.5rem;
+}
+
+.experience-subheader h3 , .experience-subheader{
+    color:#66d9f2;
+}
+
+.section-subheader-with-icon, .section-header-with-icon{
+    border-bottom: 1px solid #66d9f2;
+}
+
+.section-header-with-icon i{
+    font-size:1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

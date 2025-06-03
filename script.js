@@ -33,5 +33,10 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    showSection('about');
+    showSection('experience');
 });
+
+
+function openResume(){
+    window.open('./images/Chen Wei Lun - Resume.pdf')
+}

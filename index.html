@@ -18,7 +18,7 @@
                 <li><button class="nav-btn active" data-target="about">About</button></li>
                 <li><button class="nav-btn" data-target="experience">Experience</button></li>
                 <li><button class="nav-btn" data-target="projects">Projects</button></li>
-                <li><button class="nav-btn" data-target="contact">Contact</button></li>
+                <!-- <li><button class="nav-btn" data-target="contact">Contact</button></li> -->
             </ul>
         </nav>
     </header>
@@ -58,12 +58,16 @@
                         <i class="fab fa-linkedin "></i>
                     </a>
                 </div>
+
+                <button class="resume" onclick="openResume()">
+                    Resume
+                </button>
             
             </div>
 
             <section class="about-me container-color flex-column">
                 <div class="about-section">
-                    <h1 class="about-me-header">About Me</h1>
+                    <h1 class="section-header">About Me</h1>
                     <p class="about-me-content"> 
                         Hello! I'm a passionate Computer Science graduate from Sunway University who loves bringing ideas to life 
                         through code. I thrive on learning new technologies and tackling challenging problems. I'm excited 
@@ -72,7 +76,10 @@
                 </div>
 
                 <div class="education-section">
-                    <h1 class="section-header">Education</h1>
+                    <div class="section-subheader-with-icon">
+                        <i class="fas fa-graduation-cap section-icon"></i>
+                        <h2 class="section-subheader">Education</h2>
+                    </div>
                     <div class="education-item">
                         <div class="education-subheader">
                             <h3 class="education-degree">Bachelor of Science (Honours) in Computer Science</h3>
@@ -84,7 +91,10 @@
                 </div>
 
                 <div class="skills-section">
-                    <h2 class="section-header">Skills</h2>
+                    <div class="section-subheader-with-icon">
+                        <i class="fas fa-code section-icon"></i>
+                        <h2 class="section-subheader">Skills</h2>
+                    </div>
                     <div class="skills">
                         <img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white"></img>
                         <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"></img>
@@ -104,20 +114,108 @@
                     <div class="exploring-section">
                 </div>
 
-                <div class="github-stats-container">
-                    <h2 class="section-header">Github Stats</h2>
-                    <div class="github-stats-content">
-                        <img  class="github-stats" src="https://github-readme-stats.vercel.app/api?username=weilunchen210&show_icons=true&theme=dracula"/>
-                        <img class="github-language-stats" src="https://github-readme-stats.vercel.app/api/top-langs/?username=weilunchen210&layout=compact"/>
+                <div class="exploring-section">
+                    <div class="section-subheader-with-icon">
+                        <i class="fas fa-eye section-icon"></i>
+                        <h2 class="section-subheader">Currently Exploring</h2>
+                    </div>
+                    <div class="exploring-items">
+                        <div class="exploring-item">
+                            <div class="exploring-icon">
+                                <i class="fab fa-aws"></i>
+                            </div>
+                            <div class="exploring-content">
+                                <h4>AWS Cloud Practitioner Certification</h4>
+                                <p>Learning cloud fundamentals and AWS services</p>
+                            </div>
+                        </div>
+                        
+                        <div class="exploring-item">
+                            <div class="exploring-icon">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <div class="exploring-content">
+                                <h4>Backend Development</h4>
+                                <p>Enhancing skills in Node.js, Spring Boot, databases, and API design</p>
+                            </div>
+                        </div>
+                        
+                        <div class="exploring-item">
+                            <div class="exploring-icon">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                            <div class="exploring-content">
+                                <h4>Web Design</h4>
+                                <p>Improving UI/UX skills and modern design principles</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
+                
             </section>
         </div>
 
-        <div class="experience-container content-section flex-row">
-            <div>
-                sdsdsdsdsds
-            </div>>
+        <div class="experience-container content-section flex-column">
+            <section class="work-experience container-color">
+                <div class="section-header-with-icon">
+                    <i class="fas fa-briefcase section-icon"></i>
+                    <h1 class="section-header">Work Experience</h1>
+                </div>
+                <div class="experience-item">
+                    <div class="experience-subheader">
+                        <h3>Technology Intern</h3>
+                        <p>January 2025 - April 2025</p>
+                    </div>
+                    <p class="location">Deloitte Consulting</p>
+                    <ul class="experience-description">
+                        <li>Contributed to a proof-of-concept project related to Node.js and Spring Boot.</li>
+                        <li>Gained hands-on experience with React, Node.js, TypeScript, Spring Boot and Nest.js through internal training programs.</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section class="extra-curricular container-color">
+                <div class="section-header-with-icon">
+                    <i class="fa-solid fa-school section-icon"></i>
+                    <h1 class="section-header">Extra-curricular</h1>
+                </div>
+                <div class="experience-item">
+                    <div class="experience-subheader">
+                        <h3>Sunway Tech Club (Secretary)</h3>
+                        <p>April 2024 - April 2025</p>
+                    </div>
+                    <p class="location">Sunway University, Selangor</p>
+                    <ul class="experience-description">
+                        <li>Drafted and sent formal emails to communicate with external parties for collaboration opportunities.</li>
+                        <li>Worked with fellow executive committee members to determine the club’s strategic direction.</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-subheader">
+                        <h3>Rotaract Club of Sunway University (International Service Director)   </h3>
+                        <p>July 2023 - July 2024</p>
+                    </div>
+                    <p class="location">Sunway University, Selangor</p>
+                    <ul class="experience-description">
+                        <li>Liaised with a Rotaract Club from the Philippines to organize an online cultural exchange event.</li>
+                        <li>Collaborated with a Rotaract Club from Indonesia to provide them with a campus tour of Sunway University.</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-subheader">
+                        <h3>Sunway Tech Club (Education Department Committee Member)  </h3>
+                        <p>April 2023 - March 2024</p>
+                    </div>
+                    <p class="location">Sunway University, Selangor</p>
+                    <ul class="experience-description">
+                        <li>Spearheaded a portfolio workshop that provided 18 participants with insights into creating a strong portfolio.</li>
+                        <li>Organized the 2023 Annual General Meeting to appoint new executive committee members.</li>
+                    </ul>
+                </div>
+            </section>
         </div>
     </div>
 </body>
