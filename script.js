@@ -33,10 +33,30 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    showSection('about');
+    showSection('projects');
 });
 
 
 function openResume(){
     window.open('./images/Chen Wei Lun - Resume.pdf')
+}
+
+function openSourceCode(projectName) {
+    const githubUrls = {
+        'trim-url': 'https://github.com/weilunchen210/TRIM-URL',
+        'todo-list': 'https://github.com/weilunchen210/TodoList',
+        'digimon-game': 'https://github.com/weilunchen210/DigimonBattle',
+        'boat-race': 'https://github.com/weilunchen210/ConsoleBoatRace',
+        'maze-traversal': 'https://github.com/weilunchen210/Maze-Traversal-Algorithm',
+        'clothing-website': 'https://github.com/weilunchen210/Clothing-E-commerce-Website',
+        'calculator': 'https://github.com/weilunchen210/OdinCalculator',
+        'rockpaperscissors' : 'https://github.com/weilunchen210/rockpaperscissors'
+    }
+
+    const url = githubUrls[projectName];
+    if (url) {
+        window.open(url, '_blank');
+    } else {
+        console.error('Project URL not found');
+    }
 }
