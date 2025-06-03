@@ -134,21 +134,33 @@ body{
     align-items: center;
 }
 
+
 .resume{
-    border:none;
-    padding:0.7rem 2rem 0.7rem 2rem;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px; 
+    border: none;
+    background: linear-gradient(135deg, #66d9f2, #9B59B6); 
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(102, 217, 242, 0.3);
+    text-decoration: none; 
+    align-items: center;
+    justify-content: center;
     margin-top:1rem;
-    border-radius:5px;
-    cursor:pointer;
 }
 
 .resume:hover{
-    background-color:darkgrey;
+    background: linear-gradient(135deg, #9B59B6, #66d9f2); 
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(102, 217, 242, 0.4);
 }
 
 .profile-picture{
-    width:4rem;
-    height:4rem;
+    width:8rem;
+    height:8em;
     border-radius:50%;
 }
 
@@ -426,7 +438,7 @@ body{
 }
 
 .projects-section{
-    margin-top:5rem;
+    margin-top:2rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 2rem;
@@ -502,9 +514,9 @@ body{
 
 .source-code-button{
     padding: 0.8rem 1.5rem;
-    border-radius: 25px; /* More rounded for modern look */
+    border-radius: 25px; 
     border: none;
-    background: linear-gradient(135deg, #66d9f2, #9B59B6); /* Blue to purple gradient */
+    background: linear-gradient(135deg, #66d9f2, #9B59B6); 
     color: white;
     font-weight: 600;
     font-size: 1rem;
@@ -518,7 +530,7 @@ body{
 }
 
 .source-code-button:hover{
-    background: linear-gradient(135deg, #9B59B6, #66d9f2); /* Reversed gradient on hover */
+    background: linear-gradient(135deg, #9B59B6, #66d9f2); 
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(102, 217, 242, 0.4);
 }
@@ -526,3 +538,5 @@ body{
 .project-description-pragraph{
     margin-top:1rem;
 }
+
+
