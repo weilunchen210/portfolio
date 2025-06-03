@@ -397,6 +397,12 @@ body{
     font-size:0.8rem;
 }
 
+@media (max-width:1000px){
+    .experience-container{
+        width:90%;
+    }
+}
+
 .section-header-with-icon .section-header, .section-subheader-with-icon .section-subheader{
     border-bottom:0;
     margin-bottom:0;
@@ -437,6 +443,7 @@ body{
     width:100%;
 }
 
+
 .projects-section{
     margin-top:2rem;
     display: grid;
@@ -452,6 +459,24 @@ body{
     flex-direction: column;
     object-fit:contain;
     overflow:hidden;
+}
+
+@media (max-width:460px){
+    .projects-container{
+        width: 98%;
+    }
+    
+    .projects-section{
+        grid-template-columns: 1fr;
+        gap: 0.8rem;
+        padding: 0.8rem;
+        margin-top: 1rem;
+    }
+    
+    .projects-grid-item{
+        min-height: 450px; 
+        width: 100%; 
+    }
 }
 
 .project-image{
