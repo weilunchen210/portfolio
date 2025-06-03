@@ -10,18 +10,28 @@ body{
     background-color:#121212;
 }
 
+@keyframes fadeInLeft{
+    from{
+        opacity:0;
+        transform:translateX(30px);
+    }to{
+        opacity:1;
+        transform:translate(0);
+    }
+}
+
 .main-header{
     display:flex;
     justify-content: center;
     align-items: center;
-    margin-bottom:2rem;
-    margin-top:2rem;
+    margin-bottom:1.2rem;
+    margin-top:1.2rem;
     font-family: "Inter", sans-serif;
+    opacity:0;
+    animation-delay:0.1s;
+    animation: fadeInLeft 0.8s ease forwards;
 }
 
-.navbar{
-    
-}
 
 .nav-menu{
     gap:2rem;
@@ -29,10 +39,23 @@ body{
     list-style: none;
 }
 
-.nav-menu li a{
+.nav-menu .nav-btn{
     color:white;
     text-decoration: none;
+    border:none;
+    font-size:18px;
     border-bottom: 2px solid white;
+    background: none;
+    cursor:pointer;
+    transition: transform 0.3s ease;
+}
+.nav-menu .nav-btn:hover{
+    transform:translateY(-4px);
+}
+
+.nav-btn.active{
+    color: #9B59B6;
+    border-bottom: 2px solid #9B59B6;
 }
 
 .flex-column{
@@ -52,6 +75,7 @@ body{
     width:100vw;
     min-height:100%;
     color:#EAEFEF;
+    
 }
 
 .container-color{
@@ -62,11 +86,22 @@ body{
         inset 0 1px 0 rgba(255, 255, 255, 0.1);
 }
 
-.main-container{
+.about-container{
     width:75%;
     min-height:70%;
     font-family: "Inter", sans-serif;
     gap:1rem;
+}
+
+.content-section{
+    display:none;
+}
+
+.section-active{
+    display:flex;
+    opacity:0;
+    animation-delay:0.1s;
+    animation: fadeInLeft 0.8s ease forwards;
 }
 
 @media (max-width:950px){
@@ -227,3 +262,4 @@ body{
 .github-stats-content .github-language-stats{
     max-height:190px;
 }
+
