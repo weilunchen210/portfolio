@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    showSection('experience');
+    showSection('projects');
 });
 
 
