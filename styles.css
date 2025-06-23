@@ -7,7 +7,7 @@
 
 
 body{
-    background-color:#121212;
+    background-color:lightgrey;
     overflow-x:hidden;
     font-family: "Inter", sans-serif;
 }
@@ -42,11 +42,11 @@ body{
 }
 
 .nav-menu .nav-btn{
-    color:white;
+    color:black;
     text-decoration: none;
     border:none;
     font-size:18px;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid black;
     background: none;
     cursor:pointer;
     transition: transform 0.3s ease;
