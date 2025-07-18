@@ -50,7 +50,8 @@ function openSourceCode(projectName) {
         'maze-traversal': 'https://github.com/weilunchen210/Maze-Traversal-Algorithm',
         'clothing-website': 'https://github.com/weilunchen210/Clothing-E-commerce-Website',
         'calculator': 'https://github.com/weilunchen210/OdinCalculator',
-        'rockpaperscissors' : 'https://github.com/weilunchen210/rockpaperscissors'
+        'rockpaperscissors' : 'https://github.com/weilunchen210/rockpaperscissors',
+        'click-sprint':'https://github.com/weilunchen210/ClickSprint'
     }
 
     const url = githubUrls[projectName];
